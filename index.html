@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Eduardo Lima — Full Stack Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ========================= NAV ========================= -->
+  <nav>
+    <div class="nav-logo">Carlos Eduardo<span class="nav-logo-surname">Lima</span></div>
+    <div class="nav-links">
+      <a href="#home"    data-i18n="nav_home">início</a>
+      <a href="#skills"  data-i18n="nav_stack">ecossistema</a>
+      <a href="#contact" data-i18n="nav_contact">contato</a>
+    </div>
+    <div class="lang-selector">
+      <button type="button" class="lang-btn active" onclick="setLang('pt')">PT</button>
+      <button type="button" class="lang-btn" onclick="setLang('en')">EN</button>
+      <button type="button" class="lang-btn" onclick="setLang('zh')">中文</button>
+    </div>
+  </nav>
+
+  <!-- ========================= HERO ========================= -->
+  <section id="home">
+    <p class="hero-eyebrow">Taubaté, SP — <span data-i18n="hero_eyebrow_status">Disponível para Estágio &amp; Freela</span></p>
+    <h1 class="hero-title">
+      Carlos Eduardo<br>
+      Lima <span class="accent">—</span><br>
+      <span data-i18n="hero_title_role">Full Stack</span>
+    </h1>
+    <p class="hero-subtitle" data-i18n="hero_bio">
+      Formado em 2024, atualmente na Faculdade SENAI Félix Guisard.<br>
+      Especialista em transformar fluxos manuais em ecossistemas digitais automáticos — do banco de dados à interface do usuário.
+    </p>
+    <div class="hero-tags">
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">PHP</span>
+      <span class="tag">Laravel</span>
+      <span class="tag">Python / Flask</span>
+      <span class="tag">MySQL</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#skills" class="btn-magnetic">
+        <span data-i18n="hero_cta">Conheça meu ecossistema</span>
+        <span class="arr">→</span>
+      </a>
+      <a href="Curriculo.pdf" download="Carlos_Eduardo_Lima_Curriculo.pdf" class="btn-magnetic btn-outline">
+        <span data-i18n="hero_cv">Baixar Currículo</span>
+        <span class="arr">↓</span>
+      </a>
+    </div>
+    <div class="hero-status">
+      <div class="pulse-dot"></div>
+      <span>
+        <span class="available" data-i18n="hero_status_available">Disponível</span>
+        <span data-i18n="hero_status_for"> para novas oportunidades</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- ========================= SKILLS ========================= -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="skills_label">// Ecossistema Técnico</p>
+      <h2 class="section-title" data-i18n="skills_title">Stack &amp; Projetos</h2>
+      <p class="section-desc" data-i18n="skills_desc">Cada tecnologia é uma peça do ecossistema — escolhida com propósito, aplicada com arquitetura.</p>
+    </div>
+
+    <div class="stack-grid reveal reveal-delay-1">
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// LANG</span>
+        <div class="stack-name">CSS</div>
+        <div class="stack-level" data-i18n="level_basic">Básico</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-88"></div></div>
+      </div>
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// LANG</span>
+        <div class="stack-name">JavaScript</div>
+        <div class="stack-level" data-i18n="level_basic">Básico</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-68"></div></div>
+      </div>
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// LANG</span>
+        <div class="stack-name">PHP</div>
+        <div class="stack-level" data-i18n="level_intermediate">Intermediário</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-88"></div></div>
+      </div>
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// FWK</span>
+        <div class="stack-name">Laravel</div>
+        <div class="stack-level" data-i18n="level_intermediate">Intermediário</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-85"></div></div>
+      </div>
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// LANG</span>
+        <div class="stack-name">Python</div>
+        <div class="stack-level" data-i18n="level_intermediate">Intermediário</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-72"></div></div>
+      </div>
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// FWK</span>
+        <div class="stack-name">Flask</div>
+        <div class="stack-level" data-i18n="level_intermediate">Intermediário</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-65"></div></div>
+      </div>
+      <div class="stack-card" data-bar>
+        <span class="stack-icon">// DB</span>
+        <div class="stack-name">MySQL</div>
+        <div class="stack-level" data-i18n="level_intermediate">Intermediário</div>
+        <div class="stack-bar"><div class="stack-bar-fill w-80"></div></div>
+      </div>
+    </div>
+
+    <p class="projects-title reveal reveal-delay-2" data-i18n="projects_label">// Projetos em Destaque</p>
+
+    <div class="projects-grid">
+
+      <!-- CARD: CoByte (Integrador) -->
+      <div class="project-card reveal reveal-delay-3" data-project="cobyte">
+        <div class="project-status">
+          <div class="status-pulse"></div>
+          <span data-i18n="status_wip">Em desenvolvimento</span>
+        </div>
+        <div class="project-num">01 / COBYTE</div>
+        <div class="project-name" data-i18n="cobyte_name">CoByte - Plataforma Colaborativa para Projetos de Software</div>
+        <div class="project-desc" data-i18n="cobyte_desc">
+          Aplicação web voltada à automação e padronização do processo de levantamento e documentação de requisitos em projetos de software.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Flask</span>
+          <span class="project-tag">MySQL</span>
+        </div>
+        <div class="project-metric" data-i18n="cobyte_metric">
+          Banco <strong>Híbrido</strong> · MVC · Werkzeug Security
+        </div>
+        <span class="view-more-hint" data-i18n="hint_more">Ver mais →</span>
+      </div>
+
+      <!-- CARD: Extension (Catequese) -->
+      <div class="project-card reveal reveal-delay-4" data-project="extension">
+        <div class="project-status" style="border-color: #5fb878; color: #5fb878; background: rgba(95, 184, 120, 0.05);">
+          <span data-i18n="status_completed">Concluído</span>
+        </div>
+        <div class="project-num">02 / EXTENSION</div>
+        <div class="project-name" data-i18n="extension_name">Sistema Web para Gestão de Catequese Comunitária</div>
+        <div class="project-desc" data-i18n="extension_desc">
+          Aplicação web voltada à organização de turmas de catequese, permitindo o cadastro e gerenciamento de alunos, responsáveis e atividades.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Flask</span>
+          <span class="project-tag">MySQL</span>
+        </div>
+        <div class="project-metric" data-i18n="extension_metric">
+          Gestão <strong>360º</strong> · Drive API · Real-time
+        </div>
+        <span class="view-more-hint" data-i18n="hint_more">Ver mais →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= JOURNEY ========================= -->
+  <section id="journey">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="journey_label">// Formação Acadêmica</p>
+      <h2 class="section-title" data-i18n="journey_title">Educação &amp; Licenças</h2>
+      <p class="section-desc" data-i18n="journey_desc">Trajetória acadêmica no SENAI e certificações técnicas pela Alura.</p>
+    </div>
+
+    <div class="journey-content reveal">
+      <div class="journey-group">
+        <div class="journey-card">
+          <div class="journey-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png" alt="SENAI">
+          </div>
+          <div class="journey-info">
+            <h3 class="journey-name" data-i18n="journey_grad_name">Faculdade SENAI Félix Guisard</h3>
+            <p class="journey-degree" data-i18n="journey_grad_degree">Ensino Superior, Análise e Desenvolvimento de Sistemas</p>
+            <p class="journey-date" data-i18n="journey_grad_date">jan de 2026 — dez de 2028</p>
+            <div class="journey-tags">
+              <span>CSS</span> <span>Python</span>
+              <span data-i18n="journey_grad_skills">+14 competências</span>
+            </div>
+          </div>
+        </div>
+        <div class="journey-card">
+          <div class="journey-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png" alt="SENAI">
+          </div>
+          <div class="journey-info">
+            <h3 class="journey-name" data-i18n="journey_tech_name">Senai São Paulo</h3>
+            <p class="journey-degree" data-i18n="journey_tech_degree">Curso Técnico Integrado, Desenvolvimento de Sistemas</p>
+            <p class="journey-date" data-i18n="journey_tech_date">jan de 2023 — dez de 2024</p>
+            <div class="journey-tags">
+              <span>Laravel</span> <span>PHP</span>
+              <span data-i18n="journey_tech_skills">+12 competências</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-section">
+        <h3 class="cert-list-title" data-i18n="cert_list_title">// Certificações</h3>
+        <div class="cert-list">
+          <div class="cert-item">
+            <div class="cert-icon">A</div>
+            <div class="cert-details">
+              <h4 class="cert-title" data-i18n="cert1_title">Pensamento Computacional</h4>
+              <p class="cert-org" data-i18n="cert1_org">Alura • fev de 2026</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">A</div>
+            <div class="cert-details">
+              <h4 class="cert-title" data-i18n="cert2_title">Machine Learning: Classificação com SKLearn</h4>
+              <p class="cert-org" data-i18n="cert2_org">Alura • jan de 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <section id="contact">
+    <div>
+      <div class="section-header reveal">
+        <p class="section-label" data-i18n="contact_label">// Conexão</p>
+        <h2 class="section-title" data-i18n="contact_title">Vamos construir algo?</h2>
+        <p class="section-desc" data-i18n="contact_desc">Aberto a estágios, projetos freelance e colaborações técnicas. Respondo em até 24 horas.</p>
+      </div>
+      <div class="contact-links reveal reveal-delay-1">
+        <a href="https://github.com/kadulim" class="contact-link" target="_blank" rel="noopener">
+          <span class="contact-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </span>
+          <span class="contact-link-text">github.com/kadulim</span>
+          <span class="contact-link-arr">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-eduardo-lima-213958348/" class="contact-link" target="_blank" rel="noopener">
+          <span class="contact-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </span>
+          <span class="contact-link-text">linkedin.com/in/carlos-eduardo-lima</span>
+          <span class="contact-link-arr">→</span>
+        </a>
+        <a href="mailto:kadu.carloslima@gmail.com" class="contact-link">
+          <span class="contact-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </span>
+          <span class="contact-link-text">kadu.carloslima@gmail.com</span>
+          <span class="contact-link-arr">→</span>
+        </a>
+      </div>
+      <div class="terminal-block reveal reveal-delay-2">
+        <div><span class="terminal-prompt">carlos@mint:~$ </span><span class="terminal-cmd">whoami</span></div>
+        <div><span class="terminal-out">carlos-eduardo-lima</span></div>
+        <div><span class="terminal-prompt">carlos@mint:~$ </span><span class="terminal-cmd">cat status.txt</span></div>
+        <div><span class="terminal-out" data-i18n="terminal_status">Disponível para estágio · Taubaté, SP</span></div>
+        <div><span class="terminal-prompt">carlos@mint:~$ </span><span class="terminal-cursor"></span></div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap reveal reveal-delay-2">
+      <div class="form-title" data-i18n="form_title">Enviar mensagem</div>
+      <form action="https://formspree.io/f/xnjljwwb" method="POST" id="my-form">
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_name">Nome</label>
+          <input class="form-input" name="name" type="text" data-i18n-ph="form_ph_name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_email">Email</label>
+          <input class="form-input" name="email" type="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_subject">Assunto</label>
+          <input class="form-input" name="subject" type="text" data-i18n-ph="form_ph_subject">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_message">Mensagem</label>
+          <textarea class="form-textarea" name="message" data-i18n-ph="form_ph_msg" required></textarea>
+        </div>
+        <button class="form-submit" type="submit" id="form-submit-btn" data-i18n="form_send">Enviar →</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer>
+    <div class="footer-copy">© 2025 <span>Carlos Eduardo Lima</span> — Full Stack Developer</div>
+    <div class="footer-built" data-i18n="footer_built">Desenvolvido com propósito · Taubaté, SP</div>
+  </footer>
+
+  <!-- ========================= MODAL ========================= -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+  <div class="modal-box" id="modal-box">
+    <!-- Header fixo -->
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-num" id="modal-num"></div>
+        <h2 class="modal-title" id="modal-title-text"></h2>
+      </div>
+      <button class="modal-close" id="modal-close" aria-label="Fechar modal">✕</button>
+    </div>
+
+    <!-- Seção da Galeria -->
+    <div class="modal-gallery">
+      <button class="nav-img-btn prev" id="prev-img" aria-label="Imagem anterior">❮</button>
+      <div class="modal-image-container" id="modal-image-container">
+        <!-- Imagem injetada via JS -->
+      </div>
+      <button class="nav-img-btn next" id="next-img" aria-label="Próxima imagem">❯</button>
+    </div>
+
+    <!-- Corpo do Modal -->
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+<script src="style/js/script.js"></script>
+</body>
+</html>
