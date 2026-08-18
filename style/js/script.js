@@ -6,7 +6,7 @@ const translations = {
         nav_home: 'início', nav_stack: 'ecossistema', nav_contact: 'contato',
         hero_eyebrow_status: 'Disponível para Estágio & Freela',
         hero_title_role: 'Full Stack',
-        hero_bio: 'Formado em 2024, atualmente na Faculdade SENAI Félix Guisard.<br>Especialista em transformar fluxos manuais em ecossistemas digitais automáticos — do banco de dados à interface do usuário.',
+        //: 'Formado em 2024, atualmente na Faculdade SENAI Félix Guisard.<br>Especialista em transformar fluxos manuais em ecossistemas digitais automáticos — do banco de dados à interface do usuário.',
         hero_cta: 'Conheça meu ecossistema', hero_cv: 'Baixar Currículo',
         hero_status_available: 'Disponível', hero_status_for: 'para novas oportunidades',
         skills_label: '// Ecossistema Técnico', skills_title: 'Stack & Projetos',
@@ -25,6 +25,16 @@ const translations = {
         cert_list_title: '// Certificações',
         cert1_title: 'Pensamento Computacional', cert1_org: 'Alura • fev de 2026',
         cert2_title: 'Machine Learning: Classificação com SKLearn', cert2_org: 'Alura • jan de 2026',
+        cert3_title: 'C#: aplicando a Orientação a Objetos', cert3_org: 'Alura • jul de 2026',
+        cert4_title: 'C#: criando sua primeira aplicação', cert4_org: 'Alura • jul de 2026',
+        cert5_title: 'Flask: crie uma webapp com Python', cert5_org: 'Alura • abr de 2026',
+        cert6_title: 'Carreira Desenvolvimento Back-End PHP: Boas-vindas e primeiros passos', cert6_org: 'Alura • jan de 2026',
+        cert7_title: 'Começando com o Cisco Packet Tracer', cert7_org: 'Cisco Networking Academy • 2026',
+        cert8_title: 'Introdução à IA Moderna', cert8_org: 'Cisco Networking Academy • 2026',
+        cert9_title: 'Fundamentos da Análise de Dados', cert9_org: 'Cisco Networking Academy • 2026',
+        cert10_title: 'Conceitos Básicos de Redes', cert10_org: 'Cisco Networking Academy • 2026',
+        cert11_title: 'Linux Unhatched', cert11_org: 'NDG • 2026',
+        cert_modal_open: 'Abrir em nova aba →',
         status_wip: 'Em desenvolvimento',
         status_completed: 'Concluído',
         projects_label: '// Projetos em Destaque',
@@ -33,7 +43,7 @@ const translations = {
         cobyte_name: 'CoByte - Plataforma Colaborativa',
         cobyte_desc: 'Aplicação web voltada à automação e padronização do levantamento de requisitos de software.',
         hint_more: 'Ver mais →',
-        contact_label: '// Conexão', contact_title: 'Vamos construir algo?',
+        contact_label: '// Conexão', contact_title: 'Vamos Conversar',
         contact_desc: 'Aberto a estágios, projetos freelance e colaborações técnicas. Respondo em até 24 horas.',
         form_title: 'Enviar mensagem', form_name: 'Nome', form_email: 'Email',
         form_subject: 'Assunto', form_message: 'Mensagem', form_send: 'Enviar →',
@@ -43,7 +53,7 @@ const translations = {
         nav_home: 'home', nav_stack: 'ecosystem', nav_contact: 'contact',
         hero_eyebrow_status: 'Open to Internship & Freelance',
         hero_title_role: 'Full Stack',
-        hero_bio: 'Graduated 2024, currently at SENAI Félix Guisard College.<br>Specialist in transforming manual workflows into automated digital ecosystems.',
+        //: 'Graduated 2024, currently at SENAI Félix Guisard College.<br>Specialist in transforming manual workflows into automated digital ecosystems.',
         hero_cta: 'Explore my ecosystem', hero_cv: 'Download Resume',
         hero_status_available: 'Available', hero_status_for: 'for new opportunities',
         skills_label: '// Technical Ecosystem', skills_title: 'Stack & Projects',
@@ -60,6 +70,16 @@ const translations = {
         cert_list_title: '// Certifications',
         cert1_title: 'Computational Thinking', cert1_org: 'Alura • Feb 2026',
         cert2_title: 'Machine Learning: Classification with SKLearn', cert2_org: 'Alura • Jan 2026',
+        cert3_title: 'C#: applying Object Orientation', cert3_org: 'Alura • Jul 2026',
+        cert4_title: 'C#: building your first application', cert4_org: 'Alura • Jul 2026',
+        cert5_title: 'Flask: build a webapp with Python', cert5_org: 'Alura • Apr 2026',
+        cert6_title: 'Back-End PHP Development Career: Welcome and First Steps', cert6_org: 'Alura • Jan 2026',
+        cert7_title: 'Getting Started with Cisco Packet Tracer', cert7_org: 'Cisco Networking Academy • 2026',
+        cert8_title: 'Introduction to Modern AI', cert8_org: 'Cisco Networking Academy • 2026',
+        cert9_title: 'Data Analytics Essentials', cert9_org: 'Cisco Networking Academy • 2026',
+        cert10_title: 'Networking Basics', cert10_org: 'Cisco Networking Academy • 2026',
+        cert11_title: 'Linux Unhatched', cert11_org: 'NDG • 2026',
+        cert_modal_open: 'Open in new tab →',
         projects_label: '// Featured Projects',
         extension_name: 'Catechesis Management (Extension)',
         extension_desc: 'A 360º system for parish administration, integrating Google Drive API for document management.',
@@ -67,14 +87,14 @@ const translations = {
         cobyte_desc: 'Internal management platform with modular Flask architecture and robust security.',
         status_wip: 'Under development',
         hint_more: 'See more →',
-        contact_label: '// Connection', contact_title: "Let's build something?",
+        contact_label: '// Connection', contact_title: "Contact Us",
         modal_overview: 'Overview', modal_tech: 'Technologies', modal_metrics: 'Metrics', modal_links: 'Links',
     },
     zh: {
         nav_home: '首页', nav_stack: '技术栈', nav_contact: '联系',
         hero_eyebrow_status: '开放实习与自由职业',
         hero_title_role: '全栈开发',
-        hero_bio: '2024年毕业，目前就读于SENAI Félix Guisard学院。<br>专注于将手动流程转化为自动化数字生态系统。',
+        //: '2024年毕业，目前就读于SENAI Félix Guisard学院。<br>专注于将手动流程转化为自动化数字生态系统。',
         hero_cta: '探索我的生态系统', hero_cv: '下载简历',
         hero_status_available: '可用', hero_status_for: '接受新机会',
         skills_label: '// 技术生态系统', skills_title: '技术栈 & 项目',
@@ -91,6 +111,16 @@ const translations = {
         cert_list_title: '// 认证证书',
         cert1_title: '计算思维', cert1_org: 'Alura • 2026年2月',
         cert2_title: '机器学习：使用 SKLearn 进行分类', cert2_org: 'Alura • 2026年1月',
+        cert3_title: 'C#：应用面向对象编程', cert3_org: 'Alura • 2026年7月',
+        cert4_title: 'C#：创建你的第一个应用程序', cert4_org: 'Alura • 2026年7月',
+        cert5_title: 'Flask：用 Python 构建网页应用', cert5_org: 'Alura • 2026年4月',
+        cert6_title: 'PHP 后端开发职业课程：欢迎与第一步', cert6_org: 'Alura • 2026年1月',
+        cert7_title: 'Cisco Packet Tracer 入门', cert7_org: 'Cisco Networking Academy • 2026年',
+        cert8_title: '现代人工智能导论', cert8_org: 'Cisco Networking Academy • 2026年',
+        cert9_title: '数据分析基础', cert9_org: 'Cisco Networking Academy • 2026年',
+        cert10_title: '网络基础概念', cert10_org: 'Cisco Networking Academy • 2026年',
+        cert11_title: 'Linux Unhatched', cert11_org: 'NDG • 2026年',
+        cert_modal_open: '在新标签页打开 →',
         projects_label: '// 重点项目',
         extension_name: '教理管理系统 (扩展项目)',
         extension_desc: '360º 教区管理系统，集成了 Google Drive API 用于文件管理。',
@@ -98,7 +128,7 @@ const translations = {
         cobyte_desc: '具有模块化 Flask 架构的内部管理平台，专注于安全性和混合数据库。',
         status_wip: '开发中',
         hint_more: '查看更多 →',
-        contact_label: '// 联系', contact_title: '一起构建吧？',
+        contact_label: '// 联系', contact_title: '联系我们',
         modal_overview: '概述', modal_tech: '技术', modal_metrics: '指标', modal_links: '链接',
     }
 };
@@ -271,8 +301,6 @@ const ModalApp = {
                 <p class="modal-desc">${data.longDesc[currentLang] || data.longDesc['pt']}</p>
                 <p class="modal-section-title">${t.modal_tech}</p>
                 <div class="modal-tech-grid">${techHTML}</div>
-                <p class="modal-section-title">${t.modal_metrics}</p>
-                <div class="modal-metrics">${metricsHTML}</div>
             `;
         }
 
@@ -417,3 +445,26 @@ function animate() {
 }
 
 animate();
+
+function openCertModal(el) {
+    const pdfPath = el.dataset.cert;
+    const titleKey = el.querySelector('.cert-title').dataset.i18n;
+    const title = translations[currentLang][titleKey] || '';
+
+    document.getElementById('certModalTitle').textContent = title;
+    document.getElementById('certModalFrame').src = pdfPath;
+    document.getElementById('certModalDownload').href = pdfPath;
+    document.getElementById('certModalOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal(event) {
+    if (event.target.id !== 'certModalOverlay' && !event.target.classList.contains('cert-modal-close')) return;
+    document.getElementById('certModalOverlay').classList.remove('active');
+    document.getElementById('certModalFrame').src = '';
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertModal({ target: { id: 'certModalOverlay' } });
+});
